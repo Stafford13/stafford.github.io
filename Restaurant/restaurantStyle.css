@@ -1,0 +1,57 @@
+/*
+Eric Stafford
+*/
+footer {
+  font-size: 145%;
+}
+header, footer{
+  background-color: #C4E3CB;
+  color: #000;
+  height: 100px;
+  width: col-lg-12;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  font-family: 'Pacifico', cursive;
+}
+nav a {
+  border-top: thin #fff solid;
+  border-bottom: thin #fff solid;
+  padding-top: 12 px;
+  padding-bottom: 12 px;
+  border: thin solid #0d1f2d;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: center;
+}
+.btn {
+  margin: 0 auto;
+  display: center;
+}
+.clear-float {
+  clear: both;
+}
+img{
+  float: center;
+}
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background-color: #6A9C78;
+}
+tbody tr:nth-child(odd) {
+  background-color: #FFF1BC;
+}
+.jumbotron {
+  background-color: #F4D03F;
+  color: #2e2300;
+}
+#submit {
+  margin-bottom: 25px
+}
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">

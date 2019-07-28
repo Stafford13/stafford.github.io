@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Eric Stafford
+Notes section below.
+-->
+<html lang="en">
+<head>
+<title>Contact Us!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="Restaurant.js"></script>
+<link href="restaurantStyle.css" rel="stylesheet" type="text/css" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<style>
+body {
+  background-color: #F9F8ED;
+}
+nav .btn {
+  background-color: #6A9C78;
+  color: #fff;
+}
+nav .btn:hover {
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+<header>
+<h1>What's on your mind?</h1>
+</header>
+<div>
+<nav align="center">
+  <hr />
+<a class="btn badge-pill btn-info col-2" href="Rmenu.html">Menu</a>
+<a class="btn badge-pill btn-info col-2" href="Rmain.html"><span class="glyphicon glyphicon-home"></span></a>
+<a class="btn badge-pill btn-info col-2" href="Rcontact.html">Contact</a>
+<div class="clear-float"></div>
+<hr />
+</nav>
+</div>
+<form name="contact" onsubmit="return validateItems();">
+  <div class="form-group">
+  <label for="firstName lastName email"><h4>Let us know how we can improve!</h4></label>
+  <p>Required fields are in <em>italics</em></p><br />
+<label for="firstName"><i>First Name:</i></label>
+<input type="text" id="firstName" name="firstName"> <br />
+<label for="lastName"><i>Last Name:</i></label>
+<input type="text" id="lastName" name="lastName"> <br />
+<label for="email"><i>E-mail:</i></label>
+<input type="text" id="email" name="email"> <br />
+</div>
+<div class="form-group">
+<label for="inquiry">Reason for inquiry:</label>
+  <select id="inquiry" name="inquiry">
+    <option value="default" selected>Catering</option>
+    <option value="private">Private Party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+  </select><br />
+</div>
+<div class="form-group">
+<label for="info"><h4><i>Additional Information:</i></h4></label><br />
+<textarea id="info" name="info" style="width:200px;height:100px;"></textarea>
+</div>
+<br />
+<div class="row">
+  <article class="col-8">
+  <label><h4>Have you been to the restaurant?</h4></label><br />
+  <input type="radio" id="choice1" name="questionnaire" value="yes">
+  <label for="choice1">Yes</label><br />
+  <input type="radio" id="choice2" name="questionnaire" value="no">
+  <label for="choice2">No</label><br />
+</article>
+<br />
+</div>
+<div class="row form-group">
+  <article class="col-8">
+  <label><h4>Best day(s) to get in contact with you:</h4></label><br />
+  <input type="checkbox" id="monday" name="interest" value="monday">
+  <label for="monday">M</label>
+  <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+  <label for="tuesday">T</label>
+  <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+  <label for="wednesday">W</label>
+  <input type="checkbox" id="thursday" name="interest" value="thursday">
+  <label for="thursday">Th</label>
+  <input type="checkbox" id="friday" name="interest" value="friday">
+  <label for="friday">F</label>
+</article>
+</div>
+  <input type="submit" value="Send Request" id="submit"></input><br />
+<br />
+<footer>
+  <p>2359 Lafond Ave. San Francisco, CA</p>
+  <p><em>Telephone</em> (555)555-5555</p>
+</footer>
+</div>
+</body>
+</html>
+<!--
+Notes:
+Validate in JavaScript, work with required fields, and alerts respectively.
+better viewed with JS
+-->
